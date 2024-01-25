@@ -33,12 +33,12 @@ char	*ft_strrev(char *str)
 	int		idx;
 	int		len;
 
-	idx = 0;
+	i = 0;
 	len = ft_strlen(str) - 1;
-	while (idx < len)
+	while (i < len)
 	{
-		ft_swap_char(&str[idx], &str[len]);
-		idx++;
+		ft_swap_char(&str[i], &str[len]);
+		i++;
 		len--;
 	}
 	return (str);
