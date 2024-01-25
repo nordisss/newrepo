@@ -9,11 +9,10 @@ int	ft_absolute_value(int nbr)
 
 int	*ft_rrange(int start, int end)
 {
-	int	i;
+	int	i = 0;
 	int	size;
 	int	*tab;
 
-	i = 0;
 	if (start > end)
 		return (ft_rrange(end, start));
 	size = ft_absolute_value(start - end);
