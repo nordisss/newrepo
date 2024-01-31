@@ -1,4 +1,27 @@
-void	ft_swap(int *a, int *b)
+void	sort_int_tab(int *tab, unsigned int size)
+{
+	unsigned int	i;
+	int		tmp;
+
+	i = 0;
+	while (i < (size - 1))
+	{
+		if (tab[i] > tab[i + 1])
+		{
+			tmp = tab[i];
+			tab[i] = tab[i + 1];
+			tab[i + 1] = tmp;
+			i = -1;
+		}
+		i++;
+	}
+}
+
+
+
+
+
+/*void	ft_swap(int *a, int *b)
 {
 	int	tmp;
 
@@ -28,26 +51,8 @@ void	sort_int_tab(int *tab, unsigned int size)
 		bubble++;
 	}
 }
+*/
 
-/*
-void	sort_int_tab(int *tab, unsigned int size)
-{
-	unsigned int	idx;
-	int				tmp;
-
-	idx = 0;
-	while (idx < (size - 1))
-	{
-		if (tab[idx] > tab[idx + 1])
-		{
-			tmp = tab[idx];
-			tab[idx] = tab[idx + 1];
-			tab[idx + 1] = tmp;
-			idx = -1;
-		}
-		idx++;
-	}
-}*/
 /*
 void	ft_sort_int_tab(int *tab, int size)
 {
