@@ -21,17 +21,16 @@ int	ft_toupper(int c)
 
 void	ft_ulstr(char *str)
 {
-	int	idx;
+	int	i = 0;
 
-	idx = 0;
-	while (str[idx] != '\0')
+	while (str[i] != '\0')
 	{
-		if ((str[idx] >= 'A') && (str[idx] <= 'Z'))
-			ft_tolower(str[idx]);
-		else if ((str[idx] >= 'a') && (str[idx] <= 'z'))
-			ft_toupper(str[idx]);
-		ft_putchar(str[idx]);
-		idx++;
+		if ((str[i] >= 'A') && (str[i] <= 'Z'))
+			ft_tolower(str[i]);
+		else if ((str[i] >= 'a') && (str[i] <= 'z'))
+			ft_toupper(str[i]);
+		ft_putchar(str[i]);
+		i++;
 	}
 }
 
